@@ -4,19 +4,19 @@ using Mafi.Core.Mods;
 using Mafi.Core.Research;
 using static BetterRecipes.BetterRecipes;
 
-namespace BetterRecipes.Research;
+namespace BetterRecipes.ModData.Research;
 internal class SolarThermalSteamResearch : IResearchNodesData
 {
     public void RegisterData(ProtoRegistrator registrator)
     {
 
         ResearchNodeProto nodeProto_SolarThermalSteam = registrator.ResearchNodeProtoBuilder
-            .Start("Solar thermal steam I", NewModIDs.Research.SolarThermalSteamT1_Research)
+            .Start("Solar thermal steam I", NewMod_IDs.Research.SolarThermalSteamT1_Research)
             .Description("Solar thermal steam generation.")
-            .AddMachineToUnlock(NewModIDs.Machines.SolarThermalSteamGenerator_Machine)
-            .AddMachineToUnlock(NewModIDs.Machines.SteamLowToHi_Machine)
-            .AddAllRecipesOfMachineToUnlock(NewModIDs.Machines.SolarThermalSteamGenerator_Machine)
-            .AddAllRecipesOfMachineToUnlock(NewModIDs.Machines.SteamLowToHi_Machine)
+            .AddMachineToUnlock(NewMod_IDs.Machines.SolarThermalSteamGenerator_Machine)
+            .AddMachineToUnlock(NewMod_IDs.Machines.SteamLowToHi_Machine)
+            .AddAllRecipesOfMachineToUnlock(NewMod_IDs.Machines.SolarThermalSteamGenerator_Machine)
+            .AddAllRecipesOfMachineToUnlock(NewMod_IDs.Machines.SteamLowToHi_Machine)
             .AddProductIcon(Ids.Products.SteamDepleted)
             .AddProductIcon(Ids.Products.SteamLo)
             .AddProductIcon(Ids.Products.SteamHi)

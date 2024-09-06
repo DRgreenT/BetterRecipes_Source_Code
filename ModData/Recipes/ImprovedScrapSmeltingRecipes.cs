@@ -3,7 +3,7 @@ using Mafi.Core.Mods;
 using Mafi;
 using static BetterRecipes.BetterRecipes;
 
-namespace BetterRecipes.Recipes;
+namespace BetterRecipes.ModData.Recipes;
 internal class ImprovedScrapSmeltingRecipes : IModData
 {
     	public void RegisterData(ProtoRegistrator registrator)
@@ -11,7 +11,7 @@ internal class ImprovedScrapSmeltingRecipes : IModData
         // Improved scrap smelting
         registrator.RecipeProtoBuilder
             .Start(name: "Improved Scrap smelting",
-                recipeId: NewModIDs.Recipes.ImprovedIronScrapSmeltingT1,
+                recipeId: NewMod_IDs.Recipes.ImprovedIronScrapSmeltingT1,
                 machineId: Ids.Machines.SmeltingFurnaceT1)
             .AddInput(8, Ids.Products.IronScrap)
             .AddInput(2, Ids.Products.Coal)
@@ -24,7 +24,7 @@ internal class ImprovedScrapSmeltingRecipes : IModData
 
         registrator.RecipeProtoBuilder
             .Start(name: "Improved Scrap smelting",
-                recipeId: NewModIDs.Recipes.ImprovedIronScrapSmeltingT2,
+                recipeId: NewMod_IDs.Recipes.ImprovedIronScrapSmeltingT2,
                 machineId: Ids.Machines.SmeltingFurnaceT2)
             .AddInput(16, Ids.Products.IronScrap)
             .AddInput(4, Ids.Products.Coal)
@@ -36,7 +36,7 @@ internal class ImprovedScrapSmeltingRecipes : IModData
 
         registrator.RecipeProtoBuilder
             .Start(name: "Improved Scrap smelting",
-                recipeId: NewModIDs.Recipes.ImprovedCopperScrapSmeltingT1,
+                recipeId: NewMod_IDs.Recipes.ImprovedCopperScrapSmeltingT1,
                 machineId: Ids.Machines.SmeltingFurnaceT1)
             .AddInput(8, Ids.Products.CopperScrap)
             .AddInput(2, Ids.Products.Coal)
@@ -48,7 +48,7 @@ internal class ImprovedScrapSmeltingRecipes : IModData
 
         registrator.RecipeProtoBuilder
             .Start(name: "Improved Scrap smelting",
-                recipeId: NewModIDs.Recipes.ImprovedCopperScrapSmeltingT2,
+                recipeId: NewMod_IDs.Recipes.ImprovedCopperScrapSmeltingT2,
                 machineId: Ids.Machines.SmeltingFurnaceT2)
             .AddInput(16, Ids.Products.CopperScrap)
             .AddInput(4, Ids.Products.Coal)

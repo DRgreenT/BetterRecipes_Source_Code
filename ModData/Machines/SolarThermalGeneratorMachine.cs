@@ -4,14 +4,14 @@ using Mafi.Core.Entities.Static.Layout;
 using Mafi;
 using static BetterRecipes.BetterRecipes;
 
-namespace BetterRecipes.Machines;
+namespace BetterRecipes.ModData.Machines;
 internal class SolarThermalGeneratorMachine : IModData
 {
     	public void RegisterData(ProtoRegistrator registrator)
         {
             // Solar thermal steam generation
             registrator.MachineProtoBuilder
-                .Start("Solar thermal steam generator", NewModIDs.Machines.SolarThermalSteamGenerator_Machine)
+                .Start("Solar thermal steam generator", NewMod_IDs.Machines.SolarThermalSteamGenerator_Machine)
                 .Description("")
                 .SetCost(Costs.Build.CP2(80).Workers(0))
                 .SetCategories()

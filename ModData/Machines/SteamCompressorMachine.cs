@@ -4,13 +4,13 @@ using Mafi;
 using Mafi.Core.Entities.Static.Layout;
 using static BetterRecipes.BetterRecipes;
 
-namespace BetterRecipes.Machines;
+namespace BetterRecipes.ModData.Machines;
 internal class SteamCompressorMachine : IModData
     {
         public void RegisterData(ProtoRegistrator registrator)
         {
             registrator.MachineProtoBuilder
-            .Start("Steam compressor", NewModIDs.Machines.SteamLowToHi_Machine)
+            .Start("Steam compressor", NewMod_IDs.Machines.SteamLowToHi_Machine)
             .Description("Steam compressor")
             .SetCost(Costs.Build.CP2(100).Workers(1))
             .SetCategories()
