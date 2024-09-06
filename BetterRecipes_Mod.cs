@@ -8,7 +8,7 @@ namespace BetterRecipes;
 public sealed class BetterRecepis_Mod : DataOnlyMod {
 
 	// Name of this mod. It will be eventually shown to the player.
-	public override string Name => "Example mod";
+	public override string Name => "CoI Better recipes Mod";
 
 	// Version, currently unused.
 	public override int Version => 1;
@@ -20,12 +20,12 @@ public sealed class BetterRecepis_Mod : DataOnlyMod {
 	public BetterRecepis_Mod(CoreMod coreMod, BaseMod baseMod) {
 		// You can use Log class for logging. These will be written to the log file
 		// and can be also displayed in the in-game console with command `also_log_to_console`.
-		Log.Info("ExampleMod: constructed");
+		Log.Info("CoI Better recipes Mod: constructed");
 	}
 
 
 	public override void RegisterPrototypes(ProtoRegistrator registrator) {
-		Log.Info("ExampleMod: registering prototypes");
+		Log.Info("CoI Better recipes Mod: registering prototypes");
 		// Register all prototypes here.
 
 		// Registers all products from this assembly. See ExampleModIds.Products.cs for examples.
