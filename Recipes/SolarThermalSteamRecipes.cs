@@ -14,7 +14,7 @@ internal class SolarThermalSteamRecipes : IModData
                  machineId: NewModIDs.Machines.SolarThermalSteamGenerator_Machine)
              .SetDuration(15.Seconds())
              .AddInput(1, Ids.Products.Water)
-             .AddOutput(1, Ids.Products.SteamLo, outputAtStart: true)
+             .AddOutput(1, Ids.Products.SteamDepleted, outputAtStart: true)
              .BuildAndAdd();
         }
 

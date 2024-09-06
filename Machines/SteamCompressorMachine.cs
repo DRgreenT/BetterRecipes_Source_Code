@@ -21,7 +21,7 @@ internal class SteamCompressorMachine : IModData
             "B@>[5][5][5][5][5]>@Y",
             "   [5][5][5][5][5]   ")
             .SetCategories(Ids.ToolbarCategories.MachinesWater)
-            .SetElectricityConsumption(200.Kw())
+            .SetElectricityConsumption(150.Kw())
             .SetPrefabPath("Assets/Base/Buildings/Storages/GasT1.prefab")
             .SetCustomIconPath("Assets/Unity/Generated/Icons/LayoutEntity/StorageFluid.png")
             .BuildAndAdd();

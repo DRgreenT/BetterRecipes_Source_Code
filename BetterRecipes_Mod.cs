@@ -65,9 +65,9 @@ namespace BetterRecipes
 	    {
             public partial class Research
             {
-                public static readonly ResNodeID SolarThermalSteamT1_Research = Ids.Research.CreateId("SolarThermalSteamGenerator_Research");
+                public static readonly ResNodeID SolarThermalSteamT1_Research = Ids.Research.CreateId("SolarThermalSteamT1_Research");
                 public static readonly ResNodeID ImprovedScrapSmeltingT1_Research = Ids.Research.CreateId("ImprovedScrapSmeltingT1_Research");
-                public static readonly ResNodeID ImprovedScrapSmeltingT2_Research = Ids.Research.CreateId("ImprovedScrapSmeltingT2");
+                public static readonly ResNodeID ImprovedScrapSmeltingT2_Research = Ids.Research.CreateId("ImprovedScrapSmeltingT2_Research");
             }
             public partial class Buildings
             {
@@ -81,13 +81,14 @@ namespace BetterRecipes
 
             public partial class Recipes
             {
-                    public static readonly RecipeID ImprovedIronScrapSmeltingT1 = Ids.Recipes.CreateId("BetterIronScrapSmeltingT1");
-                    public static readonly RecipeID ImprovedIronScrapSmeltingT2 = Ids.Recipes.CreateId("BetterIronScrapSmeltingT2");
-                    public static readonly RecipeID ImprovedCopperScrapSmeltingT1 = Ids.Recipes.CreateId("BetterCopperScrapSmeltingT1");
-                    public static readonly RecipeID ImprovedCopperScrapSmeltingT2 = Ids.Recipes.CreateId("BetterCopperScrapSmeltingT2");
+                    public static readonly RecipeID ImprovedIronScrapSmeltingT1 = Ids.Recipes.CreateId("ImprovedIronScrapSmeltingT1");
+                    public static readonly RecipeID ImprovedIronScrapSmeltingT2 = Ids.Recipes.CreateId("ImprovedIronScrapSmeltingT2");
+                    public static readonly RecipeID ImprovedCopperScrapSmeltingT1 = Ids.Recipes.CreateId("ImprovedCopperScrapSmeltingT1");
+                    public static readonly RecipeID ImprovedCopperScrapSmeltingT2 = Ids.Recipes.CreateId("ImprovedCopperScrapSmeltingT2");
 
-                    public static readonly RecipeID SolarThermalSteamT1_Recipes = Ids.Recipes.CreateId("SolarThermalSteamGenerator_Recip");
-                    public static readonly RecipeID SteamCompressorT1_Recipes = Ids.Recipes.CreateId("SteamCompressorI");
+                    public static readonly RecipeID SolarThermalSteamT1_Recipes = Ids.Recipes.CreateId("SolarThermalSteamT1_Recipes");
+                    public static readonly RecipeID SteamCompressorT1_toSteamLow_Recipes = Ids.Recipes.CreateId("SteamCompressorT1_toSteamLow_Recipes");
+                    public static readonly RecipeID SteamCompressorT1_toSteamHi_Recipes = Ids.Recipes.CreateId("SteamCompressorT1_Recipes");
             }
             public partial class Products
             {

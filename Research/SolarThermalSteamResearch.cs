@@ -17,6 +17,7 @@ internal class SolarThermalSteamResearch : IResearchNodesData
             .AddMachineToUnlock(NewModIDs.Machines.SteamLowToHi_Machine)
             .AddAllRecipesOfMachineToUnlock(NewModIDs.Machines.SolarThermalSteamGenerator_Machine)
             .AddAllRecipesOfMachineToUnlock(NewModIDs.Machines.SteamLowToHi_Machine)
+            .AddProductIcon(Ids.Products.SteamDepleted)
             .AddProductIcon(Ids.Products.SteamLo)
             .AddProductIcon(Ids.Products.SteamHi)
             .SetCosts(new ResearchCostsTpl(8))
