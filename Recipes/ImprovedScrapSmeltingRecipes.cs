@@ -11,7 +11,7 @@ internal class ImprovedScrapSmeltingRecipes : IModData
         // Improved scrap smelting
         registrator.RecipeProtoBuilder
             .Start(name: "Improved Scrap smelting",
-                recipeId: NewModIDs.Recipes.BetterIronScrapSmeltingT1,
+                recipeId: NewModIDs.Recipes.ImprovedIronScrapSmeltingT1,
                 machineId: Ids.Machines.SmeltingFurnaceT1)
             .AddInput(8, Ids.Products.IronScrap)
             .AddInput(2, Ids.Products.Coal)
@@ -24,7 +24,7 @@ internal class ImprovedScrapSmeltingRecipes : IModData
 
         registrator.RecipeProtoBuilder
             .Start(name: "Improved Scrap smelting",
-                recipeId: NewModIDs.Recipes.BetterIronScrapSmeltingT2,
+                recipeId: NewModIDs.Recipes.ImprovedIronScrapSmeltingT2,
                 machineId: Ids.Machines.SmeltingFurnaceT2)
             .AddInput(16, Ids.Products.IronScrap)
             .AddInput(4, Ids.Products.Coal)
@@ -36,7 +36,7 @@ internal class ImprovedScrapSmeltingRecipes : IModData
 
         registrator.RecipeProtoBuilder
             .Start(name: "Improved Scrap smelting",
-                recipeId: NewModIDs.Recipes.BetterCopperScrapSmeltingT1,
+                recipeId: NewModIDs.Recipes.ImprovedCopperScrapSmeltingT1,
                 machineId: Ids.Machines.SmeltingFurnaceT1)
             .AddInput(8, Ids.Products.CopperScrap)
             .AddInput(2, Ids.Products.Coal)
@@ -48,7 +48,7 @@ internal class ImprovedScrapSmeltingRecipes : IModData
 
         registrator.RecipeProtoBuilder
             .Start(name: "Improved Scrap smelting",
-                recipeId: NewModIDs.Recipes.BetterCopperScrapSmeltingT2,
+                recipeId: NewModIDs.Recipes.ImprovedCopperScrapSmeltingT2,
                 machineId: Ids.Machines.SmeltingFurnaceT2)
             .AddInput(16, Ids.Products.CopperScrap)
             .AddInput(4, Ids.Products.Coal)

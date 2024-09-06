@@ -10,7 +10,7 @@ internal class SolarThermalSteamRecipes : IModData
         {
         registrator.RecipeProtoBuilder
              .Start(name: "Solar thermal steam generation I",
-                 recipeId: NewModIDs.Recipes.SolarThermalSteamGenerator_Recip,
+                 recipeId: NewModIDs.Recipes.SolarThermalSteamT1_Recipes,
                  machineId: NewModIDs.Machines.SolarThermalSteamGenerator_Machine)
              .SetDuration(15.Seconds())
              .AddInput(1, Ids.Products.Water)

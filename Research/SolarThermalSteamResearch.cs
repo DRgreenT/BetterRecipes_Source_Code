@@ -11,7 +11,7 @@ internal class SolarThermalSteamResearch : IResearchNodesData
     {
 
         ResearchNodeProto nodeProto_SolarThermalSteam = registrator.ResearchNodeProtoBuilder
-            .Start("Solar thermal steam I", NewModIDs.Research.SolarThermalSteamGenerator_Research)
+            .Start("Solar thermal steam I", NewModIDs.Research.SolarThermalSteamT1_Research)
             .Description("Solar thermal steam generation.")
             .AddMachineToUnlock(NewModIDs.Machines.SolarThermalSteamGenerator_Machine)
             .AddMachineToUnlock(NewModIDs.Machines.SteamLowToHi_Machine)

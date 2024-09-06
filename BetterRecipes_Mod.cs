@@ -65,7 +65,7 @@ namespace BetterRecipes
 	    {
             public partial class Research
             {
-                public static readonly ResNodeID SolarThermalSteamGenerator_Research = Ids.Research.CreateId("SolarThermalSteamGenerator_Research");
+                public static readonly ResNodeID SolarThermalSteamT1_Research = Ids.Research.CreateId("SolarThermalSteamGenerator_Research");
                 public static readonly ResNodeID ImprovedScrapSmeltingT1_Research = Ids.Research.CreateId("ImprovedScrapSmeltingT1_Research");
                 public static readonly ResNodeID ImprovedScrapSmeltingT2_Research = Ids.Research.CreateId("ImprovedScrapSmeltingT2");
             }
@@ -81,13 +81,13 @@ namespace BetterRecipes
 
             public partial class Recipes
             {
-                    public static readonly RecipeID BetterIronScrapSmeltingT1 = Ids.Recipes.CreateId("BetterIronScrapSmeltingT1");
-                    public static readonly RecipeID BetterIronScrapSmeltingT2 = Ids.Recipes.CreateId("BetterIronScrapSmeltingT2");
-                    public static readonly RecipeID BetterCopperScrapSmeltingT1 = Ids.Recipes.CreateId("BetterCopperScrapSmeltingT1");
-                    public static readonly RecipeID BetterCopperScrapSmeltingT2 = Ids.Recipes.CreateId("BetterCopperScrapSmeltingT2");
+                    public static readonly RecipeID ImprovedIronScrapSmeltingT1 = Ids.Recipes.CreateId("BetterIronScrapSmeltingT1");
+                    public static readonly RecipeID ImprovedIronScrapSmeltingT2 = Ids.Recipes.CreateId("BetterIronScrapSmeltingT2");
+                    public static readonly RecipeID ImprovedCopperScrapSmeltingT1 = Ids.Recipes.CreateId("BetterCopperScrapSmeltingT1");
+                    public static readonly RecipeID ImprovedCopperScrapSmeltingT2 = Ids.Recipes.CreateId("BetterCopperScrapSmeltingT2");
 
-                    public static readonly RecipeID SolarThermalSteamGenerator_Recip = Ids.Recipes.CreateId("SolarThermalSteamGenerator_Recip");
-                    public static readonly RecipeID SteamCompressor_RecipI = Ids.Recipes.CreateId("SteamCompressorI");
+                    public static readonly RecipeID SolarThermalSteamT1_Recipes = Ids.Recipes.CreateId("SolarThermalSteamGenerator_Recip");
+                    public static readonly RecipeID SteamCompressorT1_Recipes = Ids.Recipes.CreateId("SteamCompressorI");
             }
             public partial class Products
             {

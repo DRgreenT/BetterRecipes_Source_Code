@@ -11,7 +11,7 @@ internal class SteamCompressionRecipes : IModData
 
         registrator.RecipeProtoBuilder
             .Start(name: "Steam compression I",
-                recipeId: NewModIDs.Recipes.SteamCompressor_RecipI,
+                recipeId: NewModIDs.Recipes.SteamCompressorT1_Recipes,
                 machineId: NewModIDs.Machines.SteamLowToHi_Machine)
             .SetDuration(15.Seconds())
             .AddInput(4, Ids.Products.SteamLo)
