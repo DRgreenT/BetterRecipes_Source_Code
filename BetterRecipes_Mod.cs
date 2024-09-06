@@ -2,40 +2,102 @@
 using Mafi.Base;
 using Mafi.Core;
 using Mafi.Core.Mods;
+using MachineID = Mafi.Core.Factory.Machines.MachineProto.ID;
+using Mafi.Core.Research;
+using ResNodeID = Mafi.Core.Research.ResearchNodeProto.ID;
+using RecipeID = Mafi.Core.Factory.Recipes.RecipeProto.ID;
+using Mafi.Collections;
+using Mafi.Core.Game;
+using System;
+using Mafi.Core.Prototypes;
+using Mafi.Core.Factory.Machines;
 
-namespace BetterRecipes;
+namespace BetterRecipes 
+{ 
+    public sealed class BetterRecipes : DataOnlyMod 
+    {       
+        public new bool IsUiOnly => false;
+        public override string Name => "BetterRecipes";
+        public override int Version => 1;
 
-public sealed class BetterRecepis_Mod : DataOnlyMod {
+        public static Version ModVersion = new Version(0, 0, 1);
+        public void _BetterRecipes(CoreMod coreMod, BaseMod baseMod)
+        {
 
-	// Name of this mod. It will be eventually shown to the player.
-	public override string Name => "CoI Better recipes Mod";
+            // You can use Log class for logging. These will be written to the log file
+            // and can be also displayed in the in-game console with command `also_log_to_console`.
+            Log.Info("ExampleMod: constructed");
+        }
+        public new void Initialize(DependencyResolver resolver, bool gameWasLoaded)
+        {
 
-	// Version, currently unused.
-	public override int Version => 1;
+        }
+
+        public void ChangeConfigs(Lyst<IConfig> configs)
+        {
+        }
+        public override void RegisterPrototypes(ProtoRegistrator registrator)
+        {
+            registrator.RegisterAllProducts();
+            //Register machines
+            registrator.RegisterData<Machines.SolarThermalGeneratorMachine>();
+            registrator.RegisterData<Machines.SteamCompressorMachine>();
+
+            //Register recipes
+            registrator.RegisterData<Recipes.SteamCompressionRecipes>();
+            registrator.RegisterData<Recipes.SolarThermalSteamRecipes>();
+            registrator.RegisterData<Recipes.ImprovedScrapSmeltingRecipes>();
+
+            //Register research
+            registrator.RegisterData<Research.ImprovedScrapSmeltingResearch>();
+            registrator.RegisterData<Research.SolarThermalSteamResearch>();
+        }
+        public new void RegisterDependencies(DependencyResolverBuilder depBuilder, ProtosDb protosDb, bool wasLoaded)
+        {
+        }
+
+        private void InitializePatchers(DependencyResolver resolver)
+        {
+        }
 
 
-	// Mod constructor that lists mod dependencies as parameters.
-	// This guarantee that all listed mods will be loaded before this mod.
-	// It is a good idea to depend on both `Mafi.Core.CoreMod` and `Mafi.Base.BaseMod`.
-	public BetterRecepis_Mod(CoreMod coreMod, BaseMod baseMod) {
-		// You can use Log class for logging. These will be written to the log file
-		// and can be also displayed in the in-game console with command `also_log_to_console`.
-		Log.Info("CoI Better recipes Mod: constructed");
-	}
+        public static class NewModIDs
+	    {
+            public partial class Research
+            {
+                public static readonly ResNodeID SolarThermalSteamGenerator_Research = Ids.Research.CreateId("SolarThermalSteamGenerator_Research");
+                public static readonly ResNodeID ImprovedScrapSmeltingT1_Research = Ids.Research.CreateId("ImprovedScrapSmeltingT1_Research");
+                public static readonly ResNodeID ImprovedScrapSmeltingT2_Research = Ids.Research.CreateId("ImprovedScrapSmeltingT2");
+            }
+            public partial class Buildings
+            {
 
+            }
+            public partial class Machines
+		    {
+                    public static readonly MachineID SolarThermalSteamGenerator_Machine = Ids.Machines.CreateId("SteamGenerator");
+                    public static readonly MachineID SteamLowToHi_Machine = Ids.Machines.CreateId("SteamLowToHi_Machine");
+            }
 
-	public override void RegisterPrototypes(ProtoRegistrator registrator) {
-		Log.Info("CoI Better recipes Mod: registering prototypes");
-		// Register all prototypes here.
+            public partial class Recipes
+            {
+                    public static readonly RecipeID BetterIronScrapSmeltingT1 = Ids.Recipes.CreateId("BetterIronScrapSmeltingT1");
+                    public static readonly RecipeID BetterIronScrapSmeltingT2 = Ids.Recipes.CreateId("BetterIronScrapSmeltingT2");
+                    public static readonly RecipeID BetterCopperScrapSmeltingT1 = Ids.Recipes.CreateId("BetterCopperScrapSmeltingT1");
+                    public static readonly RecipeID BetterCopperScrapSmeltingT2 = Ids.Recipes.CreateId("BetterCopperScrapSmeltingT2");
 
-		// Registers all products from this assembly. See ExampleModIds.Products.cs for examples.
-		registrator.RegisterAllProducts();
+                    public static readonly RecipeID SolarThermalSteamGenerator_Recip = Ids.Recipes.CreateId("SolarThermalSteamGenerator_Recip");
+                    public static readonly RecipeID SteamCompressor_RecipI = Ids.Recipes.CreateId("SteamCompressorI");
+            }
+            public partial class Products
+            {
 
-		// Use data class registration to register other protos such as machines, recipes, etc.
-		registrator.RegisterData<BetterRecepis_Mod_MachineData>();
+            }
+            public partial class Edicts
+            {
 
-		// Registers all research from this assembly. See ExampleResearchData.cs for examples.
-		registrator.RegisterDataWithInterface<IResearchNodesData>();
-	}
+            }
+        }
 
+    }
 }
