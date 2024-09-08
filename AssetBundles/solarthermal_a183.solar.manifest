@@ -1,0 +1,44 @@
+ManifestFileVersion: 0
+CRC: 317666828
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 181df67d6429002618c5534e0a67afb4
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4da66f648ddff183d5dfa8d53fca2f1b
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 181df67d6429002618c5534e0a67afb4
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 20
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/CoI BetterRecipes Mod/SolarThermal/LightGrey.mat
+- Assets/CoI BetterRecipes Mod/SolarThermal/Metalic Grey.mat
+- Assets/CoI BetterRecipes Mod/SolarThermal/Concrete-1024-albedo.png
+- Assets/CoI BetterRecipes Mod/SolarThermal/SolarThermieI_test1.fbx
+- Assets/CoI BetterRecipes Mod/SolarThermal/Metalic Fe.mat
+- Assets/CoI BetterRecipes Mod/SolarThermal/DarkGrey.mat
+- Assets/CoI BetterRecipes Mod/SolarThermal/Concrete.mat
+Dependencies: []

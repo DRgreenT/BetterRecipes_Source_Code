@@ -1,0 +1,14 @@
+ManifestFileVersion: 0
+CRC: 150515282
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: solarthermal_a183.solar
+      Dependencies: {}
+    Info_1:
+      Name: solarthermiei_test1_9516.solar
+      Dependencies:
+        Dependency_0: solarthermal_a183.solar
+    Info_2:
+      Name: machineicons_3b6d.solar
+      Dependencies: {}

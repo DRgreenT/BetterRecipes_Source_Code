@@ -6,7 +6,7 @@ using static BetterRecipes.BetterRecipes;
 namespace BetterRecipes.ModData.Recipes;
 internal class ImprovedScrapSmeltingRecipes : IModData
 {
-    	public void RegisterData(ProtoRegistrator registrator)
+    public void RegisterData(ProtoRegistrator registrator)
         {
         // Improved scrap smelting
         registrator.RecipeProtoBuilder

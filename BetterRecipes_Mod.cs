@@ -65,4 +65,17 @@ namespace BetterRecipes
         {
         }
     }
+    public class ModDebug
+    {      
+        
+        public static int SetValuesToZero(bool isDebugMode = true)
+        {
+            if (isDebugMode)
+            {
+                return 0;
+            }
+            return 1;
+        }
+    }
+
 }

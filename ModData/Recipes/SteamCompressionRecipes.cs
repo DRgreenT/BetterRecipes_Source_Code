@@ -16,8 +16,8 @@ internal class SteamCompressionRecipes : IModData
             .Description("Steam compression Stage I")
             .SetDuration(15.Seconds())
             .AddInput(6, Ids.Products.SteamDepleted)
-            .AddOutput(2, Ids.Products.SteamLo, "X", outputAtStart: true)
-            .AddOutput(4, Ids.Products.Water, "Y", outputAtStart: true)
+            .AddOutput(3, Ids.Products.SteamLo, "X", outputAtStart: true)
+            .AddOutput(3, Ids.Products.Water, "Y", outputAtStart: true)
             .BuildAndAdd();
 
         registrator.RecipeProtoBuilder
@@ -28,7 +28,7 @@ internal class SteamCompressionRecipes : IModData
             .SetDuration(15.Seconds())
             .AddInput(3, Ids.Products.SteamLo)
             .AddOutput(1, Ids.Products.SteamHi, "X", outputAtStart: true)
-            .AddOutput(2, Ids.Products.Water, "Y", outputAtStart: true)
+            .AddOutput(2, Ids.Products.SteamDepleted, "Y", outputAtStart: true)
             .BuildAndAdd();
     }
 

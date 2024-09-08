@@ -2,11 +2,12 @@
 using Mafi.Base;
 using Mafi.Core.Mods;
 using Mafi.Core.Research;
-using static BetterRecipes.BetterRecipes;
+
 
 namespace BetterRecipes.ModData.Research;
 internal class SolarThermalSteamResearch : IResearchNodesData
 {
+    private readonly int mod = ModDebug.SetValuesToZero();
     public void RegisterData(ProtoRegistrator registrator)
     {
 
@@ -20,7 +21,7 @@ internal class SolarThermalSteamResearch : IResearchNodesData
             .AddProductIcon(Ids.Products.SteamDepleted)
             .AddProductIcon(Ids.Products.SteamLo)
             .AddProductIcon(Ids.Products.SteamHi)
-            .SetCosts(new ResearchCostsTpl(8))
+            .SetCosts(new ResearchCostsTpl(8*mod))
             .AddParents(registrator.PrototypesDb.GetOrThrow<ResearchNodeProto>(Ids.Research.SettlementWater))
             .BuildAndAdd();
         nodeProto_SolarThermalSteam.GridPosition = new Vector2i(28, 26);
