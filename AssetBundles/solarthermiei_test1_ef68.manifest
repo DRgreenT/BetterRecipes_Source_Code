@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 1626965995
+CRC: 3771971688
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: df7aade5e13f0a8b7de444daa5bf3389
+    Hash: e14606709fa8e58c28d4bce43f8c9a03
   TypeTreeHash:
     serializedVersion: 2
     Hash: 134b7874faf1e4f485ed3c5a681e862b
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: df7aade5e13f0a8b7de444daa5bf3389
+    Hash: e14606709fa8e58c28d4bce43f8c9a03
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -26,6 +26,6 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/CoI BetterRecipes Mod/SolarThermal/SolarThermieI_test1.prefab
+- Assets/CoI BetterRecipes Mod/Machines/SolarThermal/SolarThermieI_test1.prefab
 Dependencies:
-- G:/Programming IDEs/repos/Captain-of-industry-modding/src/ExampleMod.Unity/AssetBundles/solarthermal_a183.solar
+- G:/Programming IDEs/repos/Captain-of-industry-modding/src/ExampleMod.Unity/AssetBundles/solarthermal_e870

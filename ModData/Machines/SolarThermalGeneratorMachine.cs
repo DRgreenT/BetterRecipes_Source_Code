@@ -2,20 +2,19 @@
 using Mafi.Core.Mods;
 using Mafi.Core.Entities.Static.Layout;
 using Mafi;
-using static BetterRecipes.BetterRecipes;
 
 namespace BetterRecipes.ModData.Machines;
 internal class SolarThermalGeneratorMachine : IModData
 {
 
-        private readonly int mod = ModDebug.SetValuesToZero();
+        private readonly int mod = ModDebug.SetValuesToZero(false);
         public void RegisterData(ProtoRegistrator registrator)
         {
             // Solar thermal steam generation
             registrator.MachineProtoBuilder
                 .Start("Solar thermal steam generator", NewMod_IDs.Machines.SolarThermalSteamGenerator_Machine)
                 .Description("")
-                .SetCost(Costs.Build.CP(100*mod).Copper(80*mod).Workers(0*mod))
+                .SetCost(Costs.Build.CP(100*mod).Copper(100*mod).Workers(0*mod).MaintenanceT1(2))
                 .SetCategories()
                 .SetLayout(new EntityLayoutParams(),
                 "   [1][1][1][1][1]   ",
@@ -24,9 +23,9 @@ internal class SolarThermalGeneratorMachine : IModData
                 "B@>[1][1][1][1][1]>@Y",
                 "   [1][1][1][1][1]   ")
                 .SetCategories(Ids.ToolbarCategories.MachinesWater)
-                .SetElectricityConsumption(5*mod.Kw())
-                .SetPrefabPath("Assets/CoI BetterRecipes Mod/SolarThermal/SolarThermieI_test1.prefab")
-                .SetCustomIconPath("Assets/MachineIcons/solThermGen.png")
+                .SetElectricityConsumption(125*mod.Kw())
+                .SetPrefabPath("Assets/CoI BetterRecipes Mod/Machines/SolarThermal/SolarThermieI_test1.prefab")
+                .SetCustomIconPath("Assets/CoI BetterRecipes Mod/Icons/MachineIcons/solThermGen_256x256.png")
                 .BuildAndAdd();
         }
 

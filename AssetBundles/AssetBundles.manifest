@@ -1,14 +1,17 @@
 ManifestFileVersion: 0
-CRC: 150515282
+CRC: 1620294887
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: solarthermal_a183.solar
+      Name: solarthermal_e870
       Dependencies: {}
     Info_1:
-      Name: solarthermiei_test1_9516.solar
-      Dependencies:
-        Dependency_0: solarthermal_a183.solar
+      Name: machineicons_a781
+      Dependencies: {}
     Info_2:
-      Name: machineicons_3b6d.solar
+      Name: solarthermiei_test1_ef68
+      Dependencies:
+        Dependency_0: solarthermal_e870
+    Info_3:
+      Name: producticons_a01d
       Dependencies: {}

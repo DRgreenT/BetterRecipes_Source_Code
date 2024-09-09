@@ -24,7 +24,7 @@ namespace BetterRecipes.ModData
             public partial class Machines
             {
                 public static readonly MachineID SolarThermalSteamGenerator_Machine = Ids.Machines.CreateId("SteamGenerator");
-                public static readonly MachineID SteamLowToHi_Machine = Ids.Machines.CreateId("SteamLowToHi_Machine");
+                public static readonly MachineID SteamCompressor = Ids.Machines.CreateId("SteamLowToHi_Machine");
             }
 
             public partial class Recipes
@@ -35,11 +35,14 @@ namespace BetterRecipes.ModData
                 public static readonly RecipeID ImprovedCopperScrapSmeltingT2 = Ids.Recipes.CreateId("ImprovedCopperScrapSmeltingT2");
 
                 public static readonly RecipeID SolarThermalSteamT1_Recipes = Ids.Recipes.CreateId("SolarThermalSteamT1_Recipes");
-                public static readonly RecipeID SteamCompressorT1_toSteamLow_Recipes = Ids.Recipes.CreateId("SteamCompressorT1_toSteamLow_Recipes");
-                public static readonly RecipeID SteamCompressorT1_toSteamHi_Recipes = Ids.Recipes.CreateId("SteamCompressorT1_Recipes");
+                public static readonly RecipeID SteamCompressorRecipes = Ids.Recipes.CreateId("SteamCompressor_Recipes");
             }
             public partial class Products
             {
+
+            //public static readonly ProductID SteamWetProduct = Ids.Products.CreateId("SteamWetProduct");
+            [FluidProduct(color: 0x3399FF, icon: "Assets/CoI BetterRecipes Mod/Icons/ProductIcons/SteamWetProduct.png")]
+            public static readonly ProductID SteamWetProduct = Ids.Products.CreateId("WetSteam");
             // Products proto registrations can be done either by manually constructing and registering
             // `ProductProto` variants or by defining IDs and marking them with one of following attributes:
             // CountableProduct, FluidProduct, LooseProduct, MoltenProduct, or VirtualProduct.
@@ -64,7 +67,7 @@ namespace BetterRecipes.ModData
                     icon: Assets.Base.Products.Icons.CopperMolten_svg)]
                 public static readonly ProductID ExampleMoltenProduct = Ids.Products.CreateId("ExampleMoltenProduct");
             */
-            }
+        }
 
         public partial class Edicts
             {

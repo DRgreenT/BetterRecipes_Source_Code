@@ -24,6 +24,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="ModData\NewFolder\**" />
+    <EmbeddedResource Remove="ModData\NewFolder\**" />
+    <None Remove="ModData\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="System" />
     <Reference Include="Mafi">
       <HintPath>$(COI_ROOT)\Captain of Industry_Data\Managed\Mafi.dll</HintPath>
@@ -88,9 +94,5 @@
     <Reference Include="Unity.VectorGraphics">
       <HintPath>$(COI_ROOT)\Captain of Industry_Data\Managed\Unity.VectorGraphics.dll</HintPath>
     </Reference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="ModData\NewFolder\" />
   </ItemGroup>
 </Project>

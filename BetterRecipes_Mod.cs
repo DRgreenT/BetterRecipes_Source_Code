@@ -6,6 +6,7 @@ using Mafi.Collections;
 using Mafi.Core.Game;
 using System;
 using Mafi.Core.Prototypes;
+using BetterRecipes.ModData;
 
 
 namespace BetterRecipes 
@@ -48,7 +49,7 @@ namespace BetterRecipes
             registrator.RegisterData<ModData.Recipes.ImprovedScrapSmeltingRecipes>();
             
             //Register products
-            registrator.RegisterData<ModData.Products.EmptyProduct>(); //Placeholder
+            //registrator.RegisterData<ModData.Products.FluidProducts>(); //Placeholder
             
             //Register research
             registrator.RegisterData<ModData.Research.ImprovedScrapSmeltingResearch>();
