@@ -7,7 +7,7 @@ using Mafi.Core.Research;
 namespace BetterRecipes.ModData.Research;
 internal class SolarThermalSteamResearch : IResearchNodesData
 {
-    private readonly int mod = ModDebug.SetValuesToZero();
+    private readonly int mod = ModDebug.SetValuesToZero(false);
     public void RegisterData(ProtoRegistrator registrator)
     {
 

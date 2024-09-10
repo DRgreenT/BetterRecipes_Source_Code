@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 1620294887
+CRC: 393248336
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -14,4 +14,10 @@ AssetBundleManifest:
         Dependency_0: solarthermal_e870
     Info_3:
       Name: producticons_a01d
+      Dependencies: {}
+    Info_4:
+      Name: steamcompressot_72af
+      Dependencies: {}
+    Info_5:
+      Name: streamcompressor_066b
       Dependencies: {}

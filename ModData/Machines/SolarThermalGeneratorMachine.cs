@@ -14,7 +14,7 @@ internal class SolarThermalGeneratorMachine : IModData
             registrator.MachineProtoBuilder
                 .Start("Solar thermal steam generator", NewMod_IDs.Machines.SolarThermalSteamGenerator_Machine)
                 .Description("")
-                .SetCost(Costs.Build.CP(100*mod).Copper(100*mod).Workers(0*mod).MaintenanceT1(2))
+                .SetCost(Costs.Build.CP(100*mod).Copper(100*mod).Workers(0*mod).Maintenance(2*mod,Ids.Products.MaintenanceT1))
                 .SetCategories()
                 .SetLayout(new EntityLayoutParams(),
                 "   [1][1][1][1][1]   ",

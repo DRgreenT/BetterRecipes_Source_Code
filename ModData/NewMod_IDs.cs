@@ -40,9 +40,10 @@ namespace BetterRecipes.ModData
             public partial class Products
             {
 
-            //public static readonly ProductID SteamWetProduct = Ids.Products.CreateId("SteamWetProduct");
-            [FluidProduct(color: 0x3399FF, icon: "Assets/CoI BetterRecipes Mod/Icons/ProductIcons/SteamWetProduct.png")]
+            [FluidProduct(color: 0x5e98eb, icon: "Assets/CoI BetterRecipes Mod/Icons/ProductIcons/SteamWetProduct.png")]
             public static readonly ProductID SteamWetProduct = Ids.Products.CreateId("WetSteam");
+
+
             // Products proto registrations can be done either by manually constructing and registering
             // `ProductProto` variants or by defining IDs and marking them with one of following attributes:
             // CountableProduct, FluidProduct, LooseProduct, MoltenProduct, or VirtualProduct.
