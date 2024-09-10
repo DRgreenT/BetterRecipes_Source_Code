@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 3778856838
+CRC: 4241759247
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: db3637489cae1e1712547c85278aa03e
+    Hash: a82ac3a742b00e102f0b890dadc3d8da
   TypeTreeHash:
     serializedVersion: 2
     Hash: 2d8df09e698f722ada1caa03d3413830
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: db3637489cae1e1712547c85278aa03e
+    Hash: a82ac3a742b00e102f0b890dadc3d8da
 HashAppended: 0
 ClassTypes:
 - Class: 28
@@ -19,4 +19,5 @@ ClassTypes:
 SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/CoI BetterRecipes Mod/Icons/MachineIcons/solThermGen_256x256.png
+- Assets/CoI BetterRecipes Mod/Icons/MachineIcons/steamCompressorIcon.png
 Dependencies: []

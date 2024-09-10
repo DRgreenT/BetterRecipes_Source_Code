@@ -24,7 +24,7 @@ internal class SteamCompressorMachine : IModData
             .SetCategories(Ids.ToolbarCategories.MachinesWater)
             .SetElectricityConsumption(750*mod.Kw())
             .SetPrefabPath("Assets/CoI BetterRecipes Mod/Machines/SteamCompressot/streamCompressor.prefab")
-            .SetCustomIconPath("Assets/Unity/Generated/Icons/LayoutEntity/StorageFluid.png")
+            .SetCustomIconPath("Assets/CoI BetterRecipes Mod/Icons/MachineIcons/steamCompressorIcon.png")
             .BuildAndAdd();
         }
 }
