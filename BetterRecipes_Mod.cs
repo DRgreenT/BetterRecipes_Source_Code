@@ -12,11 +12,15 @@ using System.IO;
 
 namespace BetterRecipes 
 { 
-    public sealed class BetterRecipes : DataOnlyMod 
+    public sealed class BetterRecipes : IMod 
     {       
-        public new bool IsUiOnly => false;
-        public override string Name => "BetterRecipes";
-        public override int Version => 1;
+        public bool IsUiOnly => false;
+        public string Name => "BetterRecipes";
+        public int Version => 1;
+
+        // Implementing the ModConfig property
+        public Option<IConfig> ModConfig => Option<IConfig>.None; // Use Option.Some if you have a specific config.
+
 
         public static Version ModVersion = new Version(0, 0, 1);
         public void _BetterRecipes(CoreMod coreMod, BaseMod baseMod)
@@ -26,7 +30,7 @@ namespace BetterRecipes
             // and can be also displayed in the in-game console with command `also_log_to_console`.
             Log.Info("ExampleMod: constructed");
         }
-        public new void Initialize(DependencyResolver resolver, bool gameWasLoaded)
+        public void Initialize(DependencyResolver resolver, bool gameWasLoaded)
         {
 
 
@@ -35,7 +39,7 @@ namespace BetterRecipes
         public void ChangeConfigs(Lyst<IConfig> configs)
         {
         }
-        public override void RegisterPrototypes(ProtoRegistrator registrator)
+        public void RegisterPrototypes(ProtoRegistrator registrator)
         {
             registrator.RegisterAllProducts();
             //Register buildings
@@ -63,8 +67,13 @@ namespace BetterRecipes
             //Register edicts
             //registrator.RegisterData<ModData.Edicts.EmptyEdict>(); //Placeholder
         }
-        public new void RegisterDependencies(DependencyResolverBuilder depBuilder, ProtosDb protosDb, bool wasLoaded)
+        public void RegisterDependencies(DependencyResolverBuilder depBuilder, ProtosDb protosDb, bool wasLoaded)
         {
+        }
+
+        public void EarlyInit(DependencyResolver resolver)
+        {
+
         }
 
         private void InitializePatchers(DependencyResolver resolver)
