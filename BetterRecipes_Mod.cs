@@ -6,8 +6,6 @@ using Mafi.Collections;
 using Mafi.Core.Game;
 using System;
 using Mafi.Core.Prototypes;
-using BetterRecipes.ModData;
-using UnityEngine.UIElements;
 using System.IO;
 
 
@@ -30,6 +28,7 @@ namespace BetterRecipes
         }
         public new void Initialize(DependencyResolver resolver, bool gameWasLoaded)
         {
+
 
         }
 
