@@ -3,12 +3,15 @@
 chcp 65001 >nul
 
 set "modName=BetterRecipes"
-set "targetFolder=%COI_MOD_ROOT%%modName%\"
-set "sourceFile=%REPOS_ROOT%CoI %modName% Mod\bin\Release\net472\%modName%.dll"
-set "projectFilePath=%REPOS_ROOT%CoI %modName% Mod\%modName%.csproj"
-set "startGamePath=%REPOS_ROOT%CoI %modName% Mod\Captain of Industry.url"
+set "reposPath=G:\Programming IDEs\repos\C#\Modding\COI\CoI BetterRecipes Mod"
+set "reposBasePath=G:\Programming IDEs\repos\C#\Modding\COI"
+
+set "targetFolder=C:\Users\thoma\AppData\Roaming\Captain of Industry\Mods\%modName%\"
+set "sourceFile=%reposPath%\bin\Release\net472\%modName%.dll"
+set "projectFilePath=%reposPath%\%modName%.csproj"
+set "startGamePath=%reposPath%\Captain of Industry.url"
 set "targetFolder_AS=%targetFolder%AssetBundles\"
-set "sourceFolder_AS=%REPOS_ROOT%Captain-of-industry-modding\src\ExampleMod.Unity\AssetBundles\"
+set "sourceFolder_AS=%reposBasePath%\Captain-of-industry-modding\src\ExampleMod.Unity\AssetBundles\"
 
 if not exist "%targetFolder%" (
     mkdir "%targetFolder%"

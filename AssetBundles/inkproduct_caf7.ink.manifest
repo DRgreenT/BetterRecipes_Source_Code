@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 2841165080
+CRC: 3087364049
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 81cf1abf0491e244e5d3407fd9719183
+    Hash: cd80b1adf39918c43a1c74f3d96ec95e
   TypeTreeHash:
     serializedVersion: 2
     Hash: d27d605e56b00c7d193d3604b99a7461
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 81cf1abf0491e244e5d3407fd9719183
+    Hash: cd80b1adf39918c43a1c74f3d96ec95e
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -30,5 +30,5 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/CoI BetterRecipes Mod/Machines/SolarThermal/SolarThermieI_test1.prefab
+- Assets/CoI BetterRecipes Mod/Products/Ink/inkProduct.prefab
 Dependencies: []

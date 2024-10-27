@@ -6,6 +6,7 @@ using ProductID = Mafi.Core.Products.ProductProto.ID;
 
 using Mafi.Core.Buildings.Farms;
 using Mafi;
+using BetterRecipes.ModData.Machines;
 
 namespace BetterRecipes.ModData
 {
@@ -16,7 +17,9 @@ namespace BetterRecipes.ModData
                 public static readonly ResNodeID SolarThermalSteamT1_Research = Ids.Research.CreateId("SolarThermalSteamT1_Research");
                 public static readonly ResNodeID ImprovedScrapSmeltingT1_Research = Ids.Research.CreateId("ImprovedScrapSmeltingT1_Research");
                 public static readonly ResNodeID ImprovedScrapSmeltingT2_Research = Ids.Research.CreateId("ImprovedScrapSmeltingT2_Research");
-            }
+                public static readonly ResNodeID littleCheaterGeneratorReS = Ids.Research.CreateId("littleCheaterGeneratorReS");
+                public static readonly ResNodeID littleCheaterSinkReS = Ids.Research.CreateId("littleCheaterSinkReS");
+        }
         public partial class Buildings
             {
 
@@ -25,7 +28,12 @@ namespace BetterRecipes.ModData
             {
                 public static readonly MachineID SolarThermalSteamGenerator_Machine = Ids.Machines.CreateId("SteamGenerator");
                 public static readonly MachineID SteamCompressor = Ids.Machines.CreateId("SteamLowToHi_Machine");
-            }
+                public static readonly MachineID LittleCheaterGenerator = Ids.Machines.CreateId("LittleCheaterGenerator");
+                public static readonly MachineID LittleCheaterSink = Ids.Machines.CreateId("LittleCheaterSink");
+
+
+
+        }
 
             public partial class Recipes
             {
@@ -34,9 +42,14 @@ namespace BetterRecipes.ModData
                 public static readonly RecipeID ImprovedCopperScrapSmeltingT1 = Ids.Recipes.CreateId("ImprovedCopperScrapSmeltingT1");
                 public static readonly RecipeID ImprovedCopperScrapSmeltingT2 = Ids.Recipes.CreateId("ImprovedCopperScrapSmeltingT2");
 
+                // new recipes for T2 furnace to also be able to use uncrushed ore
+
                 public static readonly RecipeID SolarThermalSteamT1_Recipes = Ids.Recipes.CreateId("SolarThermalSteamT1_Recipes");
                 public static readonly RecipeID SteamCompressorRecipes = Ids.Recipes.CreateId("SteamCompressor_Recipes");
-            }
+
+                //public static readonly RecipeID littleCheaterRecipes = Ids.Recipes.CreateId("littleCheaterRecipes");
+
+        }
             public partial class Products
             {
 

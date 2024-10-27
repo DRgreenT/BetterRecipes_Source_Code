@@ -1,23 +1,16 @@
 ManifestFileVersion: 0
-CRC: 3549613694
+CRC: 2313671620
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: solarthermal_e870
-      Dependencies: {}
-    Info_1:
       Name: machineicons_a781
       Dependencies: {}
-    Info_2:
+    Info_1:
       Name: solarthermiei_test1_ef68
-      Dependencies:
-        Dependency_0: solarthermal_e870
-    Info_3:
+      Dependencies: {}
+    Info_2:
       Name: producticons_a01d
       Dependencies: {}
-    Info_4:
-      Name: steamcompressot_72af
-      Dependencies: {}
-    Info_5:
+    Info_3:
       Name: streamcompressor_066b
       Dependencies: {}

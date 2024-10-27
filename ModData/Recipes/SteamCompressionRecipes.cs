@@ -15,9 +15,9 @@ internal class SteamCompressionRecipes : IModData
                 machineId: NewMod_IDs.Machines.SteamCompressor)
             .Description("Steam compression")
             .SetDuration(60.Seconds())
-            .AddInput(8, NewMod_IDs.Products.SteamWetProduct)
-            .AddOutput(6, Ids.Products.SteamHi, "X", outputAtStart: true)
-            .AddOutput(2, Ids.Products.Water, "Y", outputAtStart: true)
+            .AddInput(12, NewMod_IDs.Products.SteamWetProduct)
+            .AddOutput(8, Ids.Products.SteamHi, "X", outputAtStart: true)
+            .AddOutput(4, Ids.Products.Water, "Y", outputAtStart: true)
             .BuildAndAdd();
     }
 
