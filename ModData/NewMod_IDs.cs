@@ -4,10 +4,6 @@ using RecipeID = Mafi.Core.Factory.Recipes.RecipeProto.ID;
 using MachineID = Mafi.Core.Factory.Machines.MachineProto.ID;
 using ProductID = Mafi.Core.Products.ProductProto.ID;
 
-using Mafi.Core.Buildings.Farms;
-using Mafi;
-using BetterRecipes.ModData.Machines;
-
 namespace BetterRecipes.ModData
 {
         public static class NewMod_IDs

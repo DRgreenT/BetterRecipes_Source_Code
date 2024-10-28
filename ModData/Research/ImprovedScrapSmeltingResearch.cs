@@ -2,7 +2,7 @@
 using Mafi.Base;
 using Mafi.Core.Mods;
 using Mafi.Core.Research;
-using static BetterRecipes.BetterRecipes;
+
 
 namespace BetterRecipes.ModData.Research;
 internal class ImprovedScrapSmeltingResearch : IResearchNodesData

@@ -10,13 +10,13 @@ using Mafi.Unity.InputControl;
 using System;
 
 
-namespace MyModNamespace.UI
+namespace BetterRecipes.ModData.UI
 {
-    public class MyEmptyWindowView : WindowView
+    public class MyWindowView : Mafi.Unity.UserInterface.WindowView
     {
         private StackContainer _windowContent;
 
-        public MyEmptyWindowView() : base("MyEmptyWindowView")
+        public MyWindowView() : base("MyEmptyWindowView")
         {
         }
 
@@ -45,15 +45,15 @@ namespace MyModNamespace.UI
         }
     }
 
-    public class MyEmptyWindowController : BaseWindowController<MyEmptyWindowView>, IToolbarItemController
+    public class MyWindowController : BaseWindowController<WindowView>, IToolbarItemController
     {
         private readonly ToolbarController _toolbarController;
 
-        public MyEmptyWindowController(
+        public MyWindowController(
             IUnityInputMgr inputManager,
             IGameLoopEvents gameLoop,
             UiBuilder builder,
-            MyEmptyWindowView emptyWindowView,
+            WindowView emptyWindowView,
             ToolbarController toolbarController,
             ControllerConfig? config = null)
             : base(inputManager, gameLoop, builder, emptyWindowView, config)

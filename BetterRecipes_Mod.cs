@@ -7,7 +7,11 @@ using Mafi.Core.Game;
 using System;
 using Mafi.Core.Prototypes;
 using System.IO;
-
+using Mafi.Core.GameLoop;
+using Mafi.Unity.InputControl.Toolbar;
+using Mafi.Unity.UserInterface;
+using Mafi.Unity;
+using BetterRecipes.ModData.UI;
 
 
 namespace BetterRecipes 
@@ -32,8 +36,24 @@ namespace BetterRecipes
         }
         public void Initialize(DependencyResolver resolver, bool gameWasLoaded)
         {
+            // Hier werden die erforderlichen Abhängigkeiten aufgelöst
+            var inputManager = resolver.Resolve<IUnityInputMgr>();
+            var gameLoopEvents = resolver.Resolve<IGameLoopEvents>();
+            var uiBuilder = resolver.Resolve<UiBuilder>();
+            var toolbarController = resolver.Resolve<ToolbarController>();
 
+            // Instanziiere die View und den Controller
+            var myEmptyWindowView = new MyWindowView();
+            var myEmptyWindowController = new MyWindowController(
+                inputManager,
+                gameLoopEvents,
+                uiBuilder,
+                myEmptyWindowView,
+                toolbarController
+            );
 
+            // Registriere das Fenster in der Toolbar
+            myEmptyWindowController.RegisterIntoToolbar(toolbarController);
         }
 
         public void ChangeConfigs(Lyst<IConfig> configs)

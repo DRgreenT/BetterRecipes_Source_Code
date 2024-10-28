@@ -1,8 +1,4 @@
-﻿using Mafi;
-using Mafi.Base;
-using Mafi.Core.Mods;
-using Mafi.Core.Products;
-using ProductID = Mafi.Core.Products.ProductProto.ID;
+﻿using Mafi.Core.Mods;
 
 namespace BetterRecipes.ModData.Products;
 internal class FluidProducts : IModData

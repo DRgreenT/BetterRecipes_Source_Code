@@ -2,7 +2,6 @@
 using Mafi.Base;
 using Mafi.Core.Mods;
 using Mafi.Core.Research;
-using static BetterRecipes.BetterRecipes;
 using ResNodeID = Mafi.Core.Research.ResearchNodeProto.ID;
 
 namespace BetterRecipes.ModData.Research

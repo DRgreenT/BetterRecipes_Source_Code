@@ -1,7 +1,6 @@
 ﻿using Mafi.Base;
 using Mafi.Core.Mods;
 using Mafi;
-using static BetterRecipes.BetterRecipes;
 
 namespace BetterRecipes.ModData.Recipes;
 internal class SolarThermalSteamRecipes : IModData
