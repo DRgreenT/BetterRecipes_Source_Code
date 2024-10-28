@@ -8,6 +8,7 @@ using Mafi.Unity.UserInterface;
 using UnityEngine;
 using Mafi.Unity.InputControl;
 using System;
+using BetterRecipes.ModData.UI;
 
 
 namespace BetterRecipes.ModData.UI
@@ -16,14 +17,14 @@ namespace BetterRecipes.ModData.UI
     {
         private StackContainer _windowContent;
 
-        public MyWindowView() : base("MyEmptyWindowView")
+        public MyWindowView() : base("MyWindowView")
         {
         }
 
         protected override void BuildWindowContent()
         {
             // Set the title of the window
-            SetTitle(new LocStrFormatted("My Empty Window"));
+            SetTitle(new LocStrFormatted("My Window"));
 
             // Set the size of the window
             var size = new Vector2(400f, 300f);
@@ -36,7 +37,7 @@ namespace BetterRecipes.ModData.UI
             MakeMovable();
 
             // Create a stack container for the window's content
-            _windowContent = Builder.NewStackContainer("MyEmptyStackContainer")
+            _windowContent = Builder.NewStackContainer("MyStackContainer")
                 .SetStackingDirection(StackContainer.Direction.TopToBottom)
                 .SetSizeMode(StackContainer.SizeMode.Dynamic);
 
@@ -45,40 +46,33 @@ namespace BetterRecipes.ModData.UI
         }
     }
 
-    public class MyWindowController : BaseWindowController<WindowView>, IToolbarItemController
+    public class MyWindowController : BaseWindowController<MyWindowView>, IToolbarItemController
     {
-        private readonly ToolbarController _toolbarController;
+        public bool IsVisible => true;
+        public bool DeactivateShortcutsIfNotVisible => false;
+        public event Action<IToolbarItemController> VisibilityChanged;
 
         public MyWindowController(
             IUnityInputMgr inputManager,
             IGameLoopEvents gameLoop,
             UiBuilder builder,
-            WindowView emptyWindowView,
+            MyWindowView emptyWindowView,
             ToolbarController toolbarController,
             ControllerConfig? config = null)
             : base(inputManager, gameLoop, builder, emptyWindowView, config)
         {
-            _toolbarController = toolbarController;
+            // Initialize any additional properties or fields if needed
         }
 
-        // Implement the IToolbarItemController interface
-        public bool IsVisible => true;
-
-        public bool DeactivateShortcutsIfNotVisible => false;
-
-        public event Action<IToolbarItemController> VisibilityChanged;
-
-        // Implement the method from IToolbarItemRegistrar
         public void RegisterIntoToolbar(ToolbarController toolbar)
         {
-            // Add a button to the main menu using the ToolbarController
-            toolbar.AddMainMenuButton(
-                "My Empty Window",
-                this,
-                "Assets/MyModNamespace/Icons/EmptyWindowIcon.png", // Replace with the correct icon path
-                1000f,
-                _ => KeyBindings.FromKey(KbCategory.Tools, ShortcutMode.Game, KeyCode.F8) // Opens the window with F8 key
-            );
+            //toolbar.AddMainMenuButton(
+            //    "My Empty Window",
+            //    this,
+            //    string.Empty, // Use an empty icon path for testing
+            //    1000f,
+            //    _ => KeyBindings.FromKey(KbCategory.Tools, ShortcutMode.Game, KeyCode.F8)
+            //);
         }
     }
 }

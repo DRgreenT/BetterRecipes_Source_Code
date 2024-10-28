@@ -27,22 +27,26 @@ namespace BetterRecipes
 
 
         public static Version ModVersion = new Version(0, 0, 1);
-        public void _BetterRecipes(CoreMod coreMod, BaseMod baseMod)
-        {
+        //public void _BetterRecipes(CoreMod coreMod, BaseMod baseMod)
+        //{
 
-            // You can use Log class for logging. These will be written to the log file
-            // and can be also displayed in the in-game console with command `also_log_to_console`.
-            Log.Info("ExampleMod: constructed");
-        }
+        //    // You can use Log class for logging. These will be written to the log file
+        //    // and can be also displayed in the in-game console with command `also_log_to_console`.
+        //    Log.Info("ExampleMod: constructed");
+        //}
         public void Initialize(DependencyResolver resolver, bool gameWasLoaded)
         {
-            // Hier werden die erforderlichen Abhängigkeiten aufgelöst
             var inputManager = resolver.Resolve<IUnityInputMgr>();
             var gameLoopEvents = resolver.Resolve<IGameLoopEvents>();
             var uiBuilder = resolver.Resolve<UiBuilder>();
             var toolbarController = resolver.Resolve<ToolbarController>();
 
-            // Instanziiere die View und den Controller
+            if (inputManager == null || gameLoopEvents == null || uiBuilder == null || toolbarController == null)
+            {
+                Log.Error("One or more dependencies could not be resolved.");
+                throw new Exception("Dependencies could not be resolved. Please check DependencyResolver.");
+            }
+
             var myEmptyWindowView = new MyWindowView();
             var myEmptyWindowController = new MyWindowController(
                 inputManager,
@@ -52,10 +56,9 @@ namespace BetterRecipes
                 toolbarController
             );
 
-            // Registriere das Fenster in der Toolbar
+            // Registrierung in der Toolbar
             myEmptyWindowController.RegisterIntoToolbar(toolbarController);
         }
-
         public void ChangeConfigs(Lyst<IConfig> configs)
         {
         }
