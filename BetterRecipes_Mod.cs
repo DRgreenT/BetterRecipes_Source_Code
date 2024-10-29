@@ -1,6 +1,4 @@
 ﻿using Mafi;
-using Mafi.Base;
-using Mafi.Core;
 using Mafi.Core.Mods;
 using Mafi.Collections;
 using Mafi.Core.Game;
@@ -29,7 +27,6 @@ namespace BetterRecipes
         public static Version ModVersion = new Version(0, 0, 1);
         //public void _BetterRecipes(CoreMod coreMod, BaseMod baseMod)
         //{
-
         //    // You can use Log class for logging. These will be written to the log file
         //    // and can be also displayed in the in-game console with command `also_log_to_console`.
         //    Log.Info("ExampleMod: constructed");
