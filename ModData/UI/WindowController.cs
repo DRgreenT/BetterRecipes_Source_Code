@@ -8,7 +8,7 @@ using Mafi.Unity.UserInterface;
 using UnityEngine;
 using Mafi.Unity.InputControl;
 using System;
-using BetterRecipes.ModData.UI;
+
 
 
 namespace BetterRecipes.ModData.UI
@@ -64,15 +64,24 @@ namespace BetterRecipes.ModData.UI
             // Initialize any additional properties or fields if needed
         }
 
+
+
         public void RegisterIntoToolbar(ToolbarController toolbar)
         {
-            //toolbar.AddMainMenuButton(
+            //try
+            //{
+            //    toolbar.AddMainMenuButton(
             //    "My Empty Window",
             //    this,
-            //    string.Empty, // Use an empty icon path for testing
+            //    "Assets/Unity/Generated/Icons/LayoutEntity/StorageFluid.png", // Icon path for testing
             //    1000f,
             //    _ => KeyBindings.FromKey(KbCategory.Tools, ShortcutMode.Game, KeyCode.F8)
-            //);
+            //    );
+            //}
+            //catch (Exception ex)
+            //{
+            //    throw new Exception(ex.Message);
+            //}
         }
     }
 }
